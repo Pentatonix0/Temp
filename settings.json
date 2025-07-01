@@ -1,0 +1,89 @@
+{
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.largeFileOptimizations": false,
+    "python.defaultInterpreterPath": "C:\\Users\\user\\.virtualenvs\\backend-hRnN6iCD\\Scripts\\python.exe",
+
+    // Настройки для Python
+    "[python]": {
+        "editor.formatOnType": true,
+        "editor.defaultFormatter": "ms-python.autopep8",
+        "python.formatting.provider": "autopep8", // Используем автоформатирование для Python
+        "python.formatting.autopep8Args": [
+            "--max-line-length",
+            "79",
+            "--indent-size",
+            "4"
+        ],
+        "editor.insertSpaces": false, // Используем табуляцию вместо пробела
+        "editor.tabSize": 4 // Размер табуляции (можно изменить по вашему предпочтению)
+    },
+
+    // Общие настройки для всех языков
+    "editor.insertSpaces": false, // Используем табуляцию (false = табуляция, true = пробелы)
+    "editor.formatOnSave": true, // Форматирование кода при сохранении
+
+    // Настройки для C/C++
+    "[c]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools",
+        "editor.insertSpaces": false, // Табуляция
+        "editor.tabSize": 4 // Размер табуляции для C
+    },
+    "[cpp]": {
+        "editor.wordBasedSuggestions": "off",
+        "editor.suggest.insertMode": "replace",
+        "editor.semanticHighlighting.enabled": true,
+        "editor.defaultFormatter": "ms-vscode.cpptools",
+        "editor.insertSpaces": false, // Табуляция
+        "editor.tabSize": 4 // Размер табуляции для C++
+    },
+
+    // Настройки для C#
+    "[csharp]": {
+        "editor.defaultFormatter": "ms-dotnettools.csharp",
+        "editor.insertSpaces": false, // Табуляция
+        "editor.tabSize": 4 // Размер табуляции для C#
+    },
+
+    // Настройки для JavaScript
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true, // Форматирование JS при сохранении
+        "editor.insertSpaces": false, // Табуляция
+        "editor.tabSize": 4, // Размер табуляции для JS
+        "javascript.updateImportsOnFileMove.enabled": "always" // Обновление импортов при перемещении файлов
+    },
+
+    // Общее форматирование для разных языков
+    "editor.defaultFormatter": "esbenp.prettier-vscode", // Используем Prettier по умолчанию для JS, JSON, HTML и других
+    "prettier.tabWidth": 4, // Настройка ширины табуляции для Prettier (можно настроить для других языков)
+    "prettier.singleQuote": true, // Используем одинарные кавычки в коде JavaScript
+
+    // Настройки для CMake (если используется в проекте)
+    "cmake.configureOnOpen": true,
+    "cmake.showOptionsMovedNotification": false,
+    "cmake.pinnedCommands": [
+        "workbench.action.tasks.configureTaskRunner",
+        "workbench.action.tasks.runTask"
+    ],
+    "cmake.options.advanced": {
+        "build": {
+            "statusBarVisibility": "inherit",
+            "inheritDefault": "visible"
+        },
+        "launch": {
+            "statusBarVisibility": "inherit",
+            "inheritDefault": "visible"
+        },
+        "debug": {
+            "statusBarVisibility": "inherit",
+            "inheritDefault": "visible"
+        }
+    },
+
+    // Настройки терминала
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "explorer.confirmDragAndDrop": false,
+    "files.eol": "\n"
+}
